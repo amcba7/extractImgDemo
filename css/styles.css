@@ -334,7 +334,7 @@ footer {
 .mobile-nav {
   display: none;
   position: absolute;
-  width: 30%;
+  width: 60%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -353,6 +353,12 @@ footer {
     color : white;
 }
 @media (max-width: 930px) {
+    html {
+        font-size : 50%;
+    }
+    .tab-container {
+        width : 90%;
+    }
   .nav-links {
     display: none;
   }
