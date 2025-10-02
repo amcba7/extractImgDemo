@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "inter", sans-serif;
+}
+
+/* header section */
+.header {
+  background-color: #27272a;
+  height: 400px;
+  position: relative;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 1;
+}
+.header-nav.sticky .nav-link {
+  color: #999;
+}
+.header-nav.sticky .active {
+  color: black;
+}
+.header-nav.sticky .logo-text p {
+  color: black;
+}
+.header-nav.sticky .login {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.header-nav.sticky .signup {
+  background-color: black;
+  color: white;
+}
+.logo-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 3.75rem;
+}
+.logo-text {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.logo-text p:last-child {
+  color: #10b270;
+  font-size: 1.2rem;
+}
+.search-bar .search-input {
+  font-size: 1.6rem;
+}
+/* Header : nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links ul {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  margin: 2rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #fff;
+}
+.nav-link.active {
+  color: white;
+}
+
+/* Header : signup button */
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.sign-up button {
+  all: unset;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sign-up .signup {
+  background-color: white;
+  color: black;
+}
+/* header : content main */
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  /* top : 50%; */
+  width: 100%;
+  top: 38%;
+}
+.header-content-heading {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.header-content-heading h1 {
+  font-size: 4rem;
+  color: white;
+}
+.header-content-heading p {
+  font-size: 2rem;
+  color: #999;
+}
+/* header : tabs */
+.tab-container {
+  width: 80%;
+}
+.tab {
+  all: unset;
+  background-color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+.tab-content {
+  background-color: white;
+  padding: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: 0 10px 5px gray;
+}
+.tab-button button:last-child {
+  background-color: #999;
+  transform: translate(-3%, 6%);
+  padding: 1rem;
+}
+.link-icon {
+  width: 2rem;
+}
+.search-input {
+  all: unset;
+}
+.tab-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.search-bar {
+  display: flex;
+  border: 1px solid #999;
+  width: 80%;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.search-input::placeholder {
+  font-size: 1.6rem;
+}
+.extract-button {
+  all: unset;
+  background-color: #999;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+
+/* features section */
+main {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.features {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feature {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  width: 80%;
+}
+.feature-content {
+  grid-column: 2;
+}
+
+.feature-icon {
+  width: 3rem;
+  color: white;
+  align-self: center;
+}
+.feature-icon-container {
+  background-color: #10b270;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-heading {
+  display: flex;
+  align-items: center;
+}
+.feature-heading p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.feature-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+/* message section */
+.message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.message .message-content {
+  width: 80%;
+}
+.message-content h1 {
+  font-size: 4rem;
+}
+.message-content p {
+  font-size: 2rem;
+}
+.message-content p a:link,
+.message-content p a:visited {
+  text-decoration: none;
+  color: #27272a;
+}
+
+/* content area */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 80%;
+  gap: 2rem;
+}
+.content-area h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.content-area p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/* footer */
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border: 1px solid #27272a;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.footer-container ul a:link,
+.footer-container ul a:visited {
+  text-decoration: none;
+  color: #27272a;
+}
+.hamburgur {
+  width: 4rem;
+  display: none;
+}
+/* responsive design */
+
+/* @media (max-width:1230px) {
+    .search-bar {
+        width:70%;
+    }
+} */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  width: 30%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 222;
+  background-color: #999;
+  /* display: flex; */
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 930px) {
+  .nav-links {
+    display: none;
+  }
+  .sign-up {
+    display: none;
+  }
+  .hamburgur {
+    display: block;
+    position: relative;
+  }
+  .header-nav {
+    justify-content: space-between;
+  }
+
+  .mobile-nav ul {
+    font-size: 1.6rem;
+    list-style: none;
+    color: white;
+  }
+  .mobile-nav ul a:link,
+  .mobile-nav ul a:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+  }
+}
