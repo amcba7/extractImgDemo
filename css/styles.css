@@ -340,14 +340,15 @@ footer {
   left: 0;
   z-index: 222;
   background-color: #555454;
-  /* display: flex; */
+  display: flex;
   flex-direction : column;
   gap: 1rem;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .mobile-nav .logo-section {
     margin-bottom : 2rem;
+    margin-top : 2rem;
 }
 .mobile-nav .logo-text:last-child {
     color : white;
