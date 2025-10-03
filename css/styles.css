@@ -342,7 +342,7 @@ footer {
   background-color: #555454;
   /* display: flex; */
   flex-direction : column;
-  gap: 1rem;
+  gap: 2rem;
   transform : translateX(-100%);
   transition : all 1s;
   /* justify-content: center; */
@@ -381,6 +381,9 @@ footer {
   }
 
   .mobile-nav ul {
+    display : flex;
+    flex-direction : column;
+    gap : 2rem;
     font-size: 1.6rem;
     list-style: none;
     color: white;
@@ -389,8 +392,8 @@ footer {
   .mobile-nav ul a:link,
   .mobile-nav ul a:visited {
     text-decoration: none;
-    font-size: 2.5rem;
-    color: white;
+    font-size: 2rem;
+    color: white;   
   }
   .tab-content {
     flex-direction : column;
